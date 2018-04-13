@@ -37,10 +37,6 @@ def create_app(config_name):
     from .home import home as home_blueprint
     app.register_blueprint(home_blueprint)
 
-    @app.route('/500')
-    def error():
-        abort(500)
-
     @app.errorhandler(403)
     def forbidden(error):
         return render_template('errors/403.html', title='Forbidden'), 403
