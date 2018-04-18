@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/venv python
 from flask_bootstrap import Bootstrap
 from flask import Flask, render_template, abort
 from flask_sqlalchemy import SQLAlchemy
@@ -28,14 +28,17 @@ def create_app(config_name):
 
     from app import models
 
-    from .admin import admin as admin_blueprint
-    app.register_blueprint(admin_blueprint, url_prefix='/admin')
+    # from .admin import admin as admin_blueprint
+    # app.register_blueprint(admin_blueprint, url_prefix='/admin')
+    #
+    # from .auth import auth as auth_blueprint
+    # app.register_blueprint(auth_blueprint)
+    #
+    # from .home import home as home_blueprint
+    # app.register_blueprint(home_blueprint)
 
-    from .auth import auth as auth_blueprint
-    app.register_blueprint(auth_blueprint)
-
-    from .home import home as home_blueprint
-    app.register_blueprint(home_blueprint)
+    from .movie import movie as movies_blueprint
+    app.register_blueprint(movies_blueprint)
 
     @app.errorhandler(403)
     def forbidden(error):
