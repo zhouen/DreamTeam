@@ -7,25 +7,20 @@ class Movie(db.Model):
     Create a Role table
     """
 
-    __tablename__ = 'movies'
+    __tablename__ = 'movie'
 
-    id = db.Column(db.Integer, primary_key=True)
-    imdb_id = db.Column(db.Integer, primary_key=True, unique=True)
+    tmdb_id = db.Column(db.Integer, primary_key=True)
+    imdb_id = db.Column(db.String, primary_key=True, unique=True)
     homepage = db.Column(db.String(512))
     original_language = db.Column(db.String(512))
-    adult = db.Column(db.Boolean)
     imdb_rating = db.Column(db.Float)
-    budget = db.Column(db.Integer)
     original_title = db.Column(db.String(512))
     overview = db.Column(db.String(512))
-    popularity = db.Column(db.String(512))
     poster_path = db.Column(db.String(512))
     release_date = db.Column(db.String(512))
     revenue = db.Column(db.Integer)
     runtime = db.Column(db.Integer)
     title = db.Column(db.String(512))
-    vote_average = db.Column(db.Float)
-    vote_count = db.Column(db.Integer)
 
     spoken_languages = db.Column(db.String(512)) # comma separated string
     production_countries = db.Column(db.String(512)) # comma separated string
