@@ -1,4 +1,8 @@
 # DreamTeam
+[![Build
+Status](https://travis-ci.org/zhou-en/DreamTeam.svg?branch=master)](https://travis-ci.org/zhou-en/DreamTeam)
+
+
 ```bash
 $ export FLASK_CONFIG=development
 $ export FLASK_APP=run.py
