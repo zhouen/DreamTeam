@@ -18,5 +18,5 @@ script:
     # - flask db migrate
     # - flask db upgrade
     # - python tests.py
-    - echo $FLASK_CONFIG
+    - which flask 
     - python dummy_test.py
