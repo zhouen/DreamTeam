@@ -12,8 +12,11 @@ install:
     # - FLASK_APP=run.py
 
 script:
-#     - flask db init
+    - export FLASK_CONFIG=development
+    - export FLASK_APP=run.py
+    # - flask db init
     # - flask db migrate
     # - flask db upgrade
     # - python tests.py
+    - echo $FLASK_CONFIG
     - python dummy_test.py
