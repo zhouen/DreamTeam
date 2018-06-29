@@ -16,12 +16,14 @@ $ export FLASK_APP=run.py
 
 ## Database and Migration
 0. Create `migrate` object when create app
+
     ```python
     def create_app(config_name):
         migrate = Migrate(app, db)
         from app import models
         return app
     ```
+
 1. Create `migration` directory in the dream-team direcotry
     ```bash
     $ flask db init
