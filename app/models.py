@@ -12,7 +12,7 @@ class Movie(db.Model):
     tmdb_id = db.Column(db.Integer, primary_key=True)
     imdb_id = db.Column(db.String, primary_key=True, unique=True)
     homepage = db.Column(db.String(512))
-    original_language = db.Column(db.String(512))
+    # original_language = db.Column(db.String(512))
     imdb_rating = db.Column(db.Float)
     original_title = db.Column(db.String(512))
     overview = db.Column(db.String(512))
