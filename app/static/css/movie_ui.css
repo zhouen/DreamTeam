@@ -1,0 +1,5085 @@
+html, body, div, span, object, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-style: normal
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block
+}
+
+img, object, embed, video {
+    max-width: 100%
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote p:before, blockquote p:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption, th, td {
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal
+}
+
+thead th, thead td {
+    font-weight: bold;
+    vertical-align: bottom
+}
+
+a img, th img, td img {
+    vertical-align: top
+}
+
+button, input, select, textarea {
+    margin: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+button {
+    width: auto;
+    overflow: visible
+}
+
+input[type=button], input[type=submit], button {
+    cursor: pointer
+}
+
+input[type="radio"], input[type="checkbox"] {
+    font-size: 110%
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ddd
+}
+
+.group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-size: .875em;
+    line-height: 1.5em;
+    font-family: Helvetica, Arial, Tahoma, sans-serif
+}
+
+a {
+    color: #369
+}
+
+a:hover {
+    color: #19334d
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: .5em
+}
+
+h1 {
+    font-size: 2.5714285714285716em;
+    line-height: 1em
+}
+
+h2 {
+    font-size: 2.142857142857143em;
+    line-height: 1.1em
+}
+
+h3 {
+    font-size: 1.7142857142857142em;
+    line-height: 1.3em
+}
+
+h4 {
+    font-size: 1.2857142857142858em;
+    line-height: 1.3em
+}
+
+h5 {
+    font-size: 1.1428571428571428em;
+    line-height: 1.3em
+}
+
+h6 {
+    font-size: 1em;
+    line-height: 1.3em;
+    text-transform: uppercase
+}
+
+hgroup h1, hgroup h2, hgroup h3, hgroup h4 {
+    margin-bottom: .1em
+}
+
+.subheader {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #8f8f8f;
+    margin-bottom: 1em
+}
+
+p, ul, ol, dl, dd, dt, blockquote, td, th {
+    line-height: 1.5em
+}
+
+ul, ol, ul ul, ol ol, ul ol, ol ul {
+    margin: 0 0 0 2em
+}
+
+ol ol li {
+    list-style-type: lower-alpha
+}
+
+ol ol ol li {
+    list-style-type: lower-roman
+}
+
+p, ul, ol, dl, blockquote, hr, pre, hgroup, table, form, fieldset {
+    margin-bottom: 1.5em
+}
+
+dl dt {
+    font-weight: bold
+}
+
+dd {
+    margin-left: 1em
+}
+
+blockquote {
+    margin-bottom: 1.5em;
+    padding-left: 1.5em;
+    border-left: 1px solid #ccc;
+    color: #666
+}
+
+blockquote small, cite {
+    color: #888;
+    font-style: italic
+}
+
+blockquote p {
+    margin-bottom: 1em
+}
+
+small, blockquote cite {
+    font-size: .85em;
+    line-height: 1
+}
+
+blockquote .pull-right, .row blockquote .pull-right {
+    float: none;
+    text-align: right;
+    display: block
+}
+
+address {
+    font-style: italic
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help
+}
+
+strong, b {
+    font-weight: bold
+}
+
+em, i {
+    font-style: italic
+}
+
+sub, sup {
+    font-size: .7em;
+    line-height: 0;
+    position: relative
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+figcaption {
+    font-size: .85em;
+    font-style: italic
+}
+
+ins, mark {
+    background-color: #fe5;
+    color: #000;
+    text-decoration: none
+}
+
+pre, code, kbd, samp {
+    font-size: 90%;
+    font-family: Menlo, Monaco, monospace, sans-serif
+}
+
+pre {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 1.5em;
+    white-space: pre;
+    overflow: auto
+}
+
+code {
+    padding: 2px 3px;
+    line-height: 1;
+    background: #f8f8f8;
+    border: 1px solid #ddd
+}
+
+kbd {
+    padding: 0 6px;
+    border-radius: 4px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset;
+    background-color: #fafafa;
+    border-color: #ccc #ccc white;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    color: #444;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    font-size: 13px
+}
+
+fieldset {
+    padding: 2em 1.5em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ddd
+}
+
+legend {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 1em
+}
+
+tfoot th, tfoot td {
+    background-color: #f2f2f2
+}
+
+th, td {
+    border-bottom: 1px solid #eee;
+    padding: .75em .5em
+}
+
+table caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: .5em;
+    color: #666
+}
+
+table.simple td, table.simple th {
+    border: 0;
+    padding: .75em .7em .75em 0
+}
+
+table.bordered td, table.bordered th {
+    border: 1px solid #ddd
+}
+
+table.stroked td, table.stroked th {
+    border-bottom: 1px solid #eee
+}
+
+table.striped tbody tr:nth-child(odd) td {
+    background-color: #f8f8f8
+}
+
+table.hovered tbody tr:hover td, table.hovered thead tr:hover th {
+    background-color: #f6f6f6
+}
+
+.thead-gray td, .thead-gray th {
+    background-color: #f0f0f0
+}
+
+.thead-black td, .thead-black th {
+    font-weight: normal;
+    color: #f6f6f6;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: #222
+}
+
+table.bordered .thead-black td, table.bordered .thead-black th {
+    border: 1px solid #444
+}
+
+.forms label {
+    display: block;
+    margin-bottom: 2px
+}
+
+.descr {
+    color: #999;
+    font-size: .85em;
+    line-height: 1.5em
+}
+
+div.descr {
+    margin: 4px 0
+}
+
+.columnar div.descr {
+    margin-bottom: 10px
+}
+
+.forms ul {
+    list-style: none;
+    margin: 0
+}
+
+.forms ul li {
+    margin-bottom: 10px
+}
+
+.forms.columnar ul li {
+    margin-bottom: 15px
+}
+
+fieldset.liner {
+    border: 0;
+    padding: 0
+}
+
+fieldset.liner legend {
+    padding: 0;
+    width: 100%;
+    padding-bottom: 12px
+}
+
+fieldset.liner legend span {
+    padding: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    display: block
+}
+
+.forms ul.multicolumn:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.forms ul.multicolumn li {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 0;
+    line-height: 1.8em
+}
+
+.forms ul.multicolumn li label {
+    margin-bottom: 0
+}
+
+.forms ul.multicolumn li.width-50 {
+    width: 48%;
+    margin-right: 2%
+}
+
+.forms ul.multicolumn li.width-33 {
+    width: 31%;
+    margin-right: 2%
+}
+
+.forms.columnar legend {
+    margin-bottom: 1em
+}
+
+.forms.columnar label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    margin-right: 20px
+}
+
+.forms.columnar .push, .forms.columnar div.descr {
+    margin-left: 170px
+}
+
+.forms.columnar li fieldset label {
+    float: none;
+    width: auto;
+    text-align: left;
+    margin-right: 0
+}
+
+.forms.columnar li fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    padding-left: 170px;
+    position: relative
+}
+
+.forms.columnar li fieldset section {
+    padding: 0;
+    position: absolute;
+    width: 150px;
+    text-align: right;
+    left: 0;
+    top: 0
+}
+
+.forms.columnar li fieldset section label {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    text-align: right
+}
+
+.forms.columnar li fieldset div.descr {
+    margin-left: 0
+}
+
+.forms li.form-section {
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    padding: 1.5em 0 .7em 0;
+    font-size: 1.1em;
+    margin-bottom: 1.5em
+}
+
+.columnar li.form-section {
+    padding-left: 170px
+}
+
+table.tableforms td {
+    font-size: 90%;
+    padding: 1px 10px 3px 0 !important;
+    border: 0
+}
+
+table.tableforms tr.labels td {
+    padding-top: .8em !important;
+    font-weight: bold
+}
+
+input[type="radio"], input[type="checkbox"] {
+    position: relative;
+    top: -1px
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    position: relative;
+    z-index: 2;
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+    height: 23px;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 1px 2px;
+    background-color: white;
+    color: #333;
+    font-size: 13px;
+    line-height: 1;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: border .3s ease-in;
+    -moz-transition: border .3s ease-in;
+    -ms-transition: border .3s ease-in;
+    -o-transition: border .3s ease-in;
+    transition: border .3s ease-in
+}
+
+textarea {
+    line-height: 1.4em
+}
+
+.error, .success {
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: .85em
+}
+
+input.input-error, textarea.input-error, select.input-error, .input-error {
+    border-color: #da3e5a;
+    box-shadow: 0 0 0 2px rgba(218, 62, 90, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2) inset
+}
+
+input.input-success, textarea.input-success, select.input-success, .input-success {
+    border-color: #18a011;
+    box-shadow: 0 0 0 2px rgba(24, 160, 17, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2) inset
+}
+
+input.input-gray, textarea.input-gray, select.input-gray, .input-gray {
+    border-color: #ccc;
+    box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2) inset
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: #5ca9e4;
+    box-shadow: 0 0 0 2px rgba(70, 161, 231, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2) inset
+}
+
+input.input-search {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 0;
+    border-radius: 15px
+}
+
+.input-append, .input-prepend {
+    display: inline-block;
+    background-color: #eee;
+    height: 23px;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 1px 8px;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.input-prepend {
+    margin-right: -1px
+}
+
+.input-append {
+    position: relative;
+    z-index: 1;
+    margin-left: -1px
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 6px 16px;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+    background-image: -moz-linear-gradient(top, #fff, #e1e1e1);
+    background-image: -ms-linear-gradient(top, #fff, #e1e1e1);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e1e1e1));
+    background-image: -webkit-linear-gradient(top, #fff, #e1e1e1);
+    background-image: -o-linear-gradient(top, #fff, #e1e1e1);
+    background-image: linear-gradient(top, #fff, #e1e1e1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1', GradientType=0);
+    border: 1px solid #dadada;
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    border-bottom-color: #a9a9a9;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15), inset 0 1px 1px 0 rgba(255, 255, 255, 0.6);
+    text-shadow: 0 1px 0 #fff
+}
+
+.btn, .btn:hover {
+    color: #000
+}
+
+.btn:hover {
+    filter: none;
+    background: none;
+    background: #eee;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15)
+}
+
+.btn-big.btn-active, .btn-big.btn-active:hover {
+    padding: 11px 25px
+}
+
+.btn-active, .btn-active:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) inset;
+    color: #555;
+    border: 0;
+    background: none;
+    filter: none;
+    background-color: #ddd;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    padding: 7px 17px 8px 17px
+}
+
+.btn-small {
+    padding: 4px 12px;
+    font-size: 11px
+}
+
+.btn-small.btn-active {
+    padding: 5px 12px
+}
+
+.btn-big {
+    padding: 10px 24px;
+    font-size: 20px
+}
+
+.btn-square {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+
+.btn-round {
+    border-radius: 15px;
+    border-radius: 0 \0
+}
+
+.btn-full {
+    width: 100%
+}
+
+.btn-group {
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: bottom
+}
+
+.btn-group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.btn-group > .btn, .btn-group > input {
+    float: left;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-left: -1px
+}
+
+.btn-group > .btn:first-child {
+    border-radius: 4px 0 0 4px
+}
+
+.btn-group > .btn:last-child {
+    border-radius: 0 4px 4px 0
+}
+
+.btn-group > .btn.btn-round:first-child, .btn-group > .input-search:first-child {
+    border-radius: 15px 0 0 15px
+}
+
+.btn-group > .btn.btn-round:last-child, .btn-group > .input-search:last-child {
+    border-radius: 0 15px 15px 0
+}
+
+.btn-append {
+    margin-left: -2px;
+    border-radius: 0 4px 4px 0
+}
+
+.btn.disabled, .btn[disabled] {
+    border: 0;
+    filter: none;
+    background: none;
+    background-color: #e9e9e9;
+    opacity: .6;
+    cursor: default;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.6)
+}
+
+@-moz-document url-prefix("http://") {
+    input[type=submit].btn::-moz-focus-inner, button.btn::-moz-focus-inner {
+        border: 0;
+        padding: 0
+    }
+}
+
+.row {
+    margin-bottom: 1.5em
+}
+
+.container.row {
+    margin-bottom: 0
+}
+
+.container:after, .row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.half, .third, .quarter, .fifth, .sixth, .twothird, .twofifth, .threefifth, .fourfifth, .fivesixth, .threequarter {
+    margin-left: 3.1914893617021276%;
+    float: left;
+    min-height: 1px
+}
+
+.half:first-child, .third:first-child, .quarter:first-child, .fifth:first-child, .sixth:first-child, .twothird:first-child, .twofifth:first-child, .threefifth:first-child, .fourfifth:first-child, .fivesixth:first-child, .threequarter:first-child {
+    margin-left: 0
+}
+
+.sixth {
+    width: 14.007092198581558%
+}
+
+.fifth {
+    width: 17.4468085106383%
+}
+
+.quarter {
+    width: 22.606382978723403%
+}
+
+.third {
+    width: 31.205673758865245%
+}
+
+.half {
+    width: 48.40425531914894%
+}
+
+.threequarter {
+    width: 74.20212765957446%
+}
+
+.twothird {
+    width: 65.60283687943262%
+}
+
+.twofifth {
+    width: 38.08510638297872%
+}
+
+.threefifth {
+    width: 58.72340425531915%
+}
+
+.fourfifth {
+    width: 100%
+}
+
+.fivesixth {
+    width: 100%
+}
+
+.push-half, .push-threequarter, .push-quarter, .push-third, .push-twothird, .push-fifth, .push-twofifth, .push-threefifth, .push-fourfifth, .push-sixth, .push-fivesixth {
+    position: relative
+}
+
+.push-half {
+    left: 51.59574468085106%
+}
+
+.push-third {
+    left: 34.39716312056737%
+}
+
+.push-quarter {
+    left: 25.79787234042553%
+}
+
+.push-fifth {
+    left: 20.638297872340427%
+}
+
+.push-sixth {
+    left: 17.198581560283685%
+}
+
+.push-threequarter {
+    left: 77.39361702127658%
+}
+
+.push-twothird {
+    left: 68.79432624113474%
+}
+
+.push-twofifth {
+    left: 41.27659574468085%
+}
+
+.push-threefifth {
+    left: 61.91489361702128%
+}
+
+.push-fourfifth {
+    left: 82.55319148936171%
+}
+
+.push-fivesixth {
+    left: 85.99290780141843%
+}
+
+.split .half, .split .third, .split .quarter, .split .fifth, .split .sixth, .split .twothird, .split .twofifth, .split .threefifth, .split .fourfifth, .split .fivesixth, .split .threequarter {
+    margin-left: 0
+}
+
+.split .half {
+    width: 50%
+}
+
+.split .threequarter {
+    width: 75%
+}
+
+.split .quarter {
+    width: 25%
+}
+
+.split .third {
+    width: 33.3%
+}
+
+.split .twothird {
+    width: 66.6%
+}
+
+.split .fifth {
+    width: 20%
+}
+
+.split .twofifth {
+    width: 40%
+}
+
+.split .threefifth {
+    width: 60%
+}
+
+.split .fourfifth {
+    width: 80%
+}
+
+.split .sixth {
+    width: 16.6%
+}
+
+.split .fivesixth {
+    width: 83.4%
+}
+
+.inner {
+    padding: 1.5em
+}
+
+.inner-left {
+    padding-left: 1.5em
+}
+
+.inner-right {
+    padding-right: 1.5em
+}
+
+.inner-nobottom {
+    padding-bottom: 1px
+}
+
+.inner-double {
+    padding: 3em
+}
+
+.inner-double-left {
+    padding-left: 3em
+}
+
+.inner-double-right {
+    padding-right: 3em
+}
+
+.inner-double-nobottom {
+    padding-bottom: 1px
+}
+
+.row .push-right {
+    float: right
+}
+
+.row .centered {
+    float: none;
+    margin: 0 auto
+}
+
+.block-two, .block-three, .block-four, .block-five, .block-six {
+    list-style: none;
+    margin-left: -3.1914893617021276%;
+    margin-bottom: 0
+}
+
+.block-two:after, .block-three:after, .block-four:after, .block-five:after, .block-six:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.block-two > li, .block-three > li, .block-four > li, .block-five > li, .block-six > li {
+    height: auto;
+    float: left;
+    margin-bottom: 1.5em;
+    margin-left: 3.1914893617021276%
+}
+
+.block-two > li {
+    width: 46.80851063829787%
+}
+
+.block-three > li {
+    width: 30.141843971631204%
+}
+
+.block-four > li {
+    width: 21.80851063829787%
+}
+
+.block-five > li {
+    width: 16.80851063829787%
+}
+
+.block-six > li {
+    width: 13.47517730496454%
+}
+
+.image-left {
+    float: left;
+    margin: 0 1em 1em 0
+}
+
+.image-right {
+    float: right;
+    margin: 0 0 1em 1em
+}
+
+.image-left img, .image-right img {
+    position: relative;
+    top: .4em
+}
+
+p.lead {
+    font-size: 1.2em
+}
+
+.supersmall {
+    font-size: .7em
+}
+
+.small {
+    font-size: .85em
+}
+
+.big {
+    font-size: 1.2em
+}
+
+input.big {
+    padding: 2px 0;
+    font-size: 1.2em
+}
+
+.text-centered {
+    text-align: center
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+.nowrap {
+    white-space: nowrap
+}
+
+.clear {
+    clear: both
+}
+
+.last {
+    margin-right: 0 !important
+}
+
+.end {
+    margin-bottom: 0 !important
+}
+
+.handle {
+    cursor: move
+}
+
+.normal {
+    font-weight: normal
+}
+
+.bold {
+    font-weight: bold
+}
+
+.italic {
+    font-style: italic
+}
+
+.req, .required {
+    font-weight: normal;
+    color: #da3e5a
+}
+
+.highlight {
+    background-color: #e5ecf5 !important
+}
+
+.width-33 {
+    width: 33%
+}
+
+.width-50 {
+    width: 50%
+}
+
+.width-100 {
+    width: 100%
+}
+
+input.width-100 {
+    width: 98.6%
+}
+
+textarea.width-100 {
+    width: 99.4%
+}
+
+select.width-100 {
+    width: 99.4%
+}
+
+.black {
+    color: #000
+}
+
+.gray-dark {
+    color: #555
+}
+
+.gray {
+    color: #777
+}
+
+.gray-light {
+    color: #999
+}
+
+.white {
+    color: #fff
+}
+
+.red, .error {
+    color: #da3e5a
+}
+
+.green, .success {
+    color: #18a011
+}
+
+a.white:hover {
+    color: #d9d9d9;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+a.green:hover, a.red:hover, a.error:hover {
+    color: #000
+}
+
+@media only screen and (max-width: 767px) {
+    .row .half, .row .third, .row .quarter, .row .fifth, .row .sixth, .row .twothird, .row .twofifth, .row .threefifth, .row .fourfifth, .row .fivesixth, .row .threequarter {
+        margin-left: 0;
+        width: 100%
+    }
+
+    .push-half, .push-threequarter, .push-quarter, .push-third, .push-twothird, .push-fifth, .push-twofifth, .push-threefifth, .push-fourfifth, .push-sixth, .push-fivesixth {
+        left: 0
+    }
+
+    .row .pull-right {
+        float: none
+    }
+
+    .block-two, .block-three, .block-four, .block-five, .block-six {
+        margin-left: 0;
+        margin-bottom: 1.5em
+    }
+
+    .block-two > li, .block-three > li, .block-four > li, .block-five > li, .block-six > li {
+        float: none;
+        margin: 0;
+        width: 100%
+    }
+
+    .forms.columnar label {
+        float: none;
+        text-align: left;
+        width: auto
+    }
+
+    .forms.columnar .push, .forms.columnar div.descr {
+        margin-left: 0
+    }
+
+    .forms .multicolumn li {
+        float: none;
+        margin-right: 0
+    }
+
+    .forms .multicolumn li.width-50, .forms .multicolumn li.width-33 {
+        width: 100%
+    }
+
+    .forms.columnar li fieldset, .forms.columnar li fieldset section {
+        width: 100%;
+        padding-left: 0;
+        text-align: left;
+        position: static
+    }
+
+    .forms fieldset {
+        padding: 0;
+        padding-top: 1em;
+        border: 0
+    }
+
+    .forms fieldset legend {
+        padding: 0
+    }
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    white-space: normal;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+:focus {
+    outline: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -.1em !important;
+    background: none !important;
+    padding: 0 !important
+}
+
+#intro {
+    background: url(http://su.bdimg.com/static/superplus/img/logo_white_ee663702.png) no-repeat #000 center;
+    height: 300px
+}
+
+#blog-roll {
+    width: 980px;
+    padding: 5px;
+    margin: 0 auto
+}
+
+#blog-roll ul {
+    float: left;
+    margin: 0
+}
+
+#blog-roll li {
+    list-style: none;
+    display: inline;
+    width: 980px;
+    margin: 2px;
+    float: inherit
+}
+
+#blog-roll a {
+    color: #333;
+    text-decoration: none
+}
+
+body {
+    background: #2c3641;
+    color: #9ab;
+    font: 13px 微软雅黑, Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1
+}
+
+::selection {
+    color: #fff;
+    background: #01a99b
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #01a99b
+}
+
+a:link, a:visited {
+    color: #ccc;
+    text-decoration: none;
+    -webkit-transition: background-color .15s linear, color .15s linear;
+    -moz-transition: background-color .15s linear, color .15s linear;
+    -o-transition: background-color .15s linear, color .15s linear;
+    -ms-transition: background-color .15s linear, color .15s linear;
+    transition: background-color .15s linear, color .15s linear
+}
+
+a:hover {
+    color: #fff
+}
+
+.clear {
+    clear: both
+}
+
+.box {
+    background: #415464;
+    border: 1px solid #415464;
+    border-bottom: solid 1px #415464
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-bottom: 10px
+}
+
+h3 {
+    font-size: 15px;
+    line-height: 36px;
+    height: 36px
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto
+}
+
+strong {
+    font-weight: bold
+}
+
+blockquote, pre {
+    padding: 5px 10px 5px 40px;
+    margin: 10px 0;
+    background: #f7f7f7 url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/quotebg.gif) no-repeat 10px 10px;
+    border: 1px solid #ebebeb;
+    color: #01a99b;
+    font-size: 12px
+}
+
+blockquote p, pre p {
+    text-indent: 0 !important
+}
+
+center {
+    margin: 0 auto;
+    text-align: center
+}
+
+.mainbar {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    height: 32px
+}
+
+#topbar {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    overflow: hidden
+}
+
+#topbar ul {
+    list-style: none
+}
+
+#topbar ul li {
+    height: 33px;
+    line-height: 33px;
+    float: left;
+    padding: 0 20px 0 0;
+    text-align: center;
+    font-size: 12px
+}
+
+#topbar ul li a {
+    color: #999
+}
+
+#topbar ul li a:hover {
+    color: #01a99b
+}
+
+#topbar ul ul {
+    display: none
+}
+
+.toolbar {
+    height: 30px;
+    line-height: 30px;
+    float: left
+}
+
+#rss {
+    float: right
+}
+
+#rss ul li {
+    margin: 4px 0 0 14px;
+    float: right
+}
+
+.icon1, .icon1 span.hover, .icon2, .icon2 span.hover, .icon3, .icon3 span.hover, .icon4, .icon4 span.hover, .icon5, .icon5 span.hover, .icon6, .icon6 span.hover {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/social_icon.gif) no-repeat
+}
+
+.icon1 {
+    background-position: 0 -48px
+}
+
+.icon1 span.hover {
+    background-position: 0 -72px
+}
+
+.icon2 {
+    background-position: 0 -192px
+}
+
+.icon2 span.hover {
+    background-position: 0 -216px
+}
+
+.icon3 {
+    background-position: 0 -240px
+}
+
+.icon3 span.hover {
+    background-position: 0 -264px
+}
+
+.icon4 {
+    background-position: 0 -96px
+}
+
+.icon4 span.hover {
+    background-position: 0 -120px
+}
+
+.icon5 {
+    background-position: 0 -144px
+}
+
+.icon5 span.hover {
+    background-position: 0 -168px
+}
+
+.icon6 {
+    background-position: 0 0
+}
+
+.icon6 span.hover {
+    background-position: 0 -24px
+}
+
+#blogname {
+    outline: 0;
+    overflow: hidden;
+    width: 980px;
+    height: 275px;
+    text-align: center
+}
+
+#blogname h1 {
+    text-indent: -9999px;
+    height: 0;
+    width: 0
+}
+
+.search_phone {
+    display: none
+}
+
+#main_loading {
+    position: fixed !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    z-index: 999;
+    background: #000 url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/loading.gif) no-repeat center;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    font-size: 14px;
+    line-height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -100px;
+    border-radius: 5px
+}
+
+#loading-one {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 50px 0 0 -50px;
+    padding: 3px 10px
+}
+
+.mainmenus {
+    background: #14181c
+}
+
+.home {
+    float: left;
+    height: 48px;
+    width: 135px;
+    background: #01a99b url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/icon.png) no-repeat 5px -148px;
+    text-indent: 48px
+}
+
+.home_none {
+    float: left;
+    height: 48px;
+    width: 135px;
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/icon.png) no-repeat 5px -148px;
+    text-indent: 48px
+}
+
+.home_none:hover {
+    background: #01a99b url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/icon.png) no-repeat 5px -148px;
+    text-indent: 48px
+}
+
+.topnav {
+    height: 48px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    position: relative
+}
+
+.topnav a {
+    color: #fff;
+    height: 48px;
+    line-height: 48px
+}
+
+.topnav ul {
+    z-index: 999
+}
+
+.topnav li {
+    height: 48px;
+    float: left;
+    position: relative;
+    width: auto
+}
+
+.topnav li a:link, .topnav li a:visited {
+    float: left;
+    position: relative;
+    padding: 0 20px;
+    display: block
+}
+
+.topnav li a:hover, .topnav .current_page_item, .topnav .current-menu-item, .topnav .current-post-parent {
+    background: #01a99b;
+    float: left;
+    position: relative
+}
+
+.topnav ul ul {
+    display: none;
+    position: absolute;
+    top: 48px;
+    z-index: 999;
+    left: 0
+}
+
+.topnav ul ul li {
+    font-size: 13px;
+    color: #363636;
+    display: block;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    border-top: #444 solid 1px;
+    left: -28px
+}
+
+.topnav ul ul li a:link, .topnav ul ul li a:visited {
+    font-size: 13px;
+    color: #fff;
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+    background: #363636;
+    font-weight: normal
+}
+
+.topnav ul ul li a:hover {
+    font-size: 13px;
+    color: #fff;
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+    background: #01a99b;
+    font-weight: normal
+}
+
+.topnav ul ul ul {
+    display: none;
+    position: absolute;
+    top: -1px;
+    left: 190px;
+    z-index: 999
+}
+
+.topnav ul ul ul li {
+    font-size: 13px;
+    color: #363636;
+    display: block;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+}
+
+.topnav ul ul ul li a:link, .topnav ul ul ul li a:visited {
+    font-size: 13px;
+    color: #fff;
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+    background: #363636;
+    font-weight: normal
+}
+
+.topnav ul ul ul li a:hover {
+    font-size: 13px;
+    color: #fff;
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+    background: #01a99b;
+    font-weight: normal
+}
+
+.topnav .menu-button {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 54px;
+    cursor: pointer
+}
+
+.topnav .menu-button.active {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px
+}
+
+.topnav .menu-button i {
+    display: block;
+    width: 40px;
+    height: 33px;
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/icon.png) no-repeat -2px -236px
+}
+
+.topnav .menu-right {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.topnav .menu-right .menu-search {
+    position: relative
+}
+
+.topnav .menu-right #menu-search {
+    width: 14px;
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/icon.png) no-repeat 5px -193px
+}
+
+.topnav .menu-right .menu-search .menu-search-form {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background: #01a99b;
+    padding: 15px;
+    z-index: 900
+}
+
+.topnav .menu-right .current_page_item .menu-search-form {
+    display: block
+}
+
+.subsidiary {
+    background: #242d35;
+    height: 34px;
+    padding: 0 10px
+}
+
+.bulletin {
+    overflow: hidden;
+    height: 24px;
+    margin: 5px 0;
+    line-height: 24px
+}
+
+.bulletin span {
+    width: 70px
+}
+
+.bulletin marquee {
+    color: #01a99b
+}
+
+.bdshare_small {
+    margin-top: 5px
+}
+
+#sidebar {
+    width: 316px;
+    margin-left: 16px;
+    float: right
+}
+
+#sidebar-follow {
+    width: 316px
+}
+
+.widget {
+    padding: 10px
+}
+
+.widget h3 {
+    padding: 0;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: #01a99b solid 3px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+.widget span {
+    color: #01a99b
+}
+
+.widget em {
+    color: #666;
+    font-style: normal;
+    margin-right: 20px;
+    float: right
+}
+
+.widget ul {
+    padding: 1px 0 1px 0
+}
+
+.widget ul li {
+    line-height: 1.5em;
+    border-bottom: dashed 1px #f3f3f3;
+    padding: 5px 0
+}
+
+.blogroll li {
+    display: inline-block;
+    margin-right: 10px
+}
+
+.textwidget {
+    margin: -3px;
+    overflow: hidden;
+    width: 300px
+}
+
+.textwidget img {
+    max-width: 300px;
+    height: auto
+}
+
+.inter-top .textwidget {
+    margin: 0;
+    overflow: hidden;
+    width: auto
+}
+
+.inter-top .textwidget img {
+    max-width: inherit;
+    height: auto
+}
+
+#tabnav {
+    display: block;
+    clear: both;
+    zoom: 1
+}
+
+#tabnav li {
+    float: left;
+    width: 98px;
+    border-bottom: #ccc solid 3px;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 5px
+}
+
+#tabnav .selected {
+    position: relative;
+    color: #01a99b;
+    cursor: default;
+    border-bottom: #01a99b solid 3px
+}
+
+#tab-content .hide {
+    display: none
+}
+
+#tab-content ul {
+    overflow: hidden;
+    list-style: none
+}
+
+#tab-content ul li {
+    float: left;
+    width: 100%;
+    border-bottom: solid 1px #5f6e7e;
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/zt_con_li_blue.gif) no-repeat left 12px;
+    text-indent: .8em
+}
+
+#tab-content ul li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block
+}
+
+.search {
+    background: #2c3641
+}
+
+.search_site {
+    width: 314px
+}
+
+.search_site #searchform .search-s {
+    display: block;
+    height: 22px;
+    *height: 20px;
+    padding: 10px;
+    width: 250px;
+    border: 0;
+    color: #999;
+    box-shadow: none;
+    line-height: 22px;
+    background: #415464
+}
+
+.search_site #searchform label {
+    display: block;
+    height: 40px;
+    position: relative;
+    width: 250px
+}
+
+.search_site #searchform span {
+    position: absolute;
+    float: left;
+    line-height: 40px;
+    left: 10px;
+    color: #bcbcbc;
+    cursor: text;
+    z-index: 10
+}
+
+.search_site #searchform #searchsubmit {
+    border: 0;
+    cursor: pointer;
+    display: block;
+    height: 42px;
+    padding: 0;
+    text-indent: -9999px;
+    width: 44px;
+    background: #14181c url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/icon.png) no-repeat 0 -195px;
+    float: right
+}
+
+.search_site #searchform #searchsubmit:hover {
+    background: #01a99b url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/icon.png) no-repeat 0 -195px;
+    -webkit-transition: background-color .15s linear, color .15s linear;
+    -moz-transition: background-color .15s linear, color .15s linear;
+    -o-transition: background-color .15s linear, color .15s linear;
+    -ms-transition: background-color .15s linear, color .15s linear;
+    transition: background-color .15s linear, color .15s linear
+}
+
+.r_comment {
+    position: relative;
+    overflow: hidden;
+    height: auto
+}
+
+.r_comment ul {
+    list-style: none;
+    overflow: hidden;
+    position: relative
+}
+
+.r_comment li {
+    line-height: 22px !important;
+    clear: both;
+    height: 48px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-bottom: dashed 1px #f3f3f3
+}
+
+.r_comment li:hover {
+    border-right: #01a99b solid 3px;
+    background: #f8f8f8
+}
+
+.r_comment ul li img.avatar {
+    height: 35px;
+    width: 35px;
+    float: left;
+    margin: 4px 8px 0 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px
+}
+
+#loginform p {
+    line-height: 26px;
+    margin-bottom: 5px
+}
+
+#loginform input.login {
+    width: 140px;
+    padding: 2px;
+    color: #444;
+    border: 1px solid #dfdfdf;
+    box-shadow: inset 2px 3px 5px #eee
+}
+
+#loginform input.denglu {
+    width: 70px;
+    margin-top: 5px;
+    height: 63px;
+    color: #444;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    font-size: 16px
+}
+
+#loginform input.denglu:hover {
+    background: #01a99b;
+    color: #fff
+}
+
+.loginl {
+    float: left;
+    margin: 5px 10px 5px 0
+}
+
+.loginl label {
+    margin-right: 10px
+}
+
+#loginform label input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 3px
+}
+
+#loginform input:focus {
+    border: 1px solid #ccc
+}
+
+.register {
+    margin: 0 10px 0 50px
+}
+
+.v_avatar {
+    margin: 5px;
+    float: left;
+    width: 64px
+}
+
+.v_avatar img {
+    border-radius: 5px
+}
+
+.v_li li {
+    list-style-type: none;
+    float: left;
+    width: 100px;
+    padding: 5px
+}
+
+.tagcloud {
+    height: auto;
+    overflow: hidden
+}
+
+.tagcloud a:link, tagclouda:visited {
+    background: #273442;
+    border-radius: 3px;
+    padding: 3px 8px;
+    margin: 2px;
+    height: 20px;
+    line-height: 30px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-transition: background-color .15s linear, color .15s linear;
+    -moz-transition: background-color .15s linear, color .15s linear;
+    -o-transition: background-color .15s linear, color .15s linear;
+    -ms-transition: background-color .15s linear, color .15s linear;
+    transition: background-color .15s linear, color .15s linear
+}
+
+.tagcloud a:hover {
+    background-color: #01a99b;
+    color: #FFF
+}
+
+.action {
+    border-top: solid 1px #f3f3f3;
+    margin-top: 5px;
+    padding-top: 5px;
+    text-align: right
+}
+
+.action a {
+    color: #ccc
+}
+
+.imglist {
+    margin-left: -10px
+}
+
+.imglist li {
+    float: left;
+    width: 142px;
+    margin-left: 10px;
+    border-bottom: 0 !important;
+    padding: 0 !important
+}
+
+.imglist li h4 {
+    margin: 8px 0 10px 0;
+    height: 34px;
+    overflow: hidden
+}
+
+.imglist li img {
+    width: 142px;
+    height: 95px
+}
+
+#left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 980px;
+    height: 100%;
+    background-color: #ccc
+}
+
+#right {
+    margin-left: 980px;
+    height: 100%;
+    background-color: #09f
+}
+
+.mainleft {
+    width: 980px;
+    overflow: hidden;
+    float: left
+}
+
+#post_container {
+    margin-left: -16px;
+    position: relative
+}
+
+#post_container li {
+    width: 314px;
+    margin-left: 16px;
+    -webkit-transition: all .7s ease-out .1s;
+    -moz-transition: all .7s ease-out;
+    -o-transition: all .7s ease-out .1s;
+    transition: all .7s ease-out .1s;
+    float: left
+}
+
+.post_hover {
+    border-bottom: #456 solid 1px
+}
+
+.post_hover:hover {
+    box-shadow: inset 0 -5px 0 #01a99b
+}
+
+.thumbnail {
+    max-height: 500px;
+    overflow: hidden
+}
+
+.thumbnail a {
+    display: block;
+    padding: 7px 7px 0 7px
+}
+
+.thumbnail img {
+    width: 300px;
+    height: 400px
+}
+
+.article {
+    padding: 10px 10px 5px 10px;
+    position: relative
+}
+
+.info {
+    font-size: 12px;
+    line-height: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    border-top: 1px solid #586b7e;
+    line-height: 25px;
+    padding: 0 5px;
+    text-align: center
+}
+
+.info span {
+    height: 20px;
+    line-height: 17px
+}
+
+.info span a {
+    color: #999
+}
+
+.info span a:hover {
+    color: #01a99b
+}
+
+.info_ico {
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/info.png) no-repeat;
+    padding: 0 5px 0 20px
+}
+
+.info_category {
+    background-position: 0 -21px
+}
+
+.info_date {
+    background-position: 0 -1px
+}
+
+.info_views {
+    background-position: 0 -62px
+}
+
+.info_comment {
+    background-position: 0 -43px
+}
+
+.info_author {
+    background-position: 0 -82px
+}
+
+.entry_post {
+    line-height: 22px;
+    color: #666;
+    margin-bottom: 5px;
+    word-break: break-all
+}
+
+.sticky {
+    background: #01a99b;
+    height: 25px;
+    width: 60px;
+    position: absolute;
+    z-index: 20;
+    top: -1px;
+    right: -1px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px
+}
+
+.subyes {
+    background: #337ab7;
+    height: 25px;
+    width: 60px;
+    position: absolute;
+    z-index: 20;
+    top: -1px;
+    left: -1px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px
+}
+
+.subno {
+    background: #eee;
+    height: 25px;
+    width: 60px;
+    position: absolute;
+    z-index: 20;
+    top: -1px;
+    left: -1px;
+    color: #999;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px
+}
+
+.sticky_hot {
+    background: #F60;
+    height: 25px;
+    width: 60px;
+    position: absolute;
+    z-index: 20;
+    top: -1px;
+    right: -1px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px
+}
+
+.arrow-catpanel-top {
+    position: absolute;
+    width: 52px;
+    height: 14px;
+    bottom: -1px;
+    left: 130px;
+    z-index: 10
+}
+
+.zoom {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: none
+}
+
+.zoomOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    margin: 7px 7px 0 7px;
+    background-image: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/zoom.png);
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+#post_container .fixed-hight h2 a {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+#post_container .fixed-hight .entry_post {
+    overflow: hidden;
+    height: 42px
+}
+
+#post_container .fixed-hight .info {
+    overflow: hidden;
+    height: 26px
+}
+
+.paginations a {
+    width: 28px;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 0 0 4px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #637485;
+    background: #415464;
+    color: #888
+}
+
+.paginations .span {
+    width: 28px;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 0 0 4px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #637485;
+    background: #415464;
+    color: #888
+}
+
+.paginations a.extend {
+    padding: 0 5px
+}
+
+.paginations .current {
+    height: 28px;
+    width: 28px;
+    color: #fff;
+    border: 1px solid #4e5d6b;
+    background: #2b3641;
+    margin: 20px 0 0 4px
+}
+
+.paginations a:hover {
+    height: 28px;
+    width: 28px;
+    color: #fff;
+    border: 1px solid #4e5d6b;
+    text-decoration: none;
+    background: #2b3641
+}
+
+.paginations .page_previous, .paginations .prev {
+    width: 54px;
+    height: 28px;
+    text-align: center
+}
+
+.paginations .page_previous:hover, .paginations .prev:hover {
+    width: 54px;
+    height: 28px;
+    text-align: center
+}
+
+.paginations .page_next, .paginations .next, .paginations .page_next:hover, .paginations .next:hover {
+    width: 54px;
+    height: 28px;
+    text-align: center
+}
+
+.paginations .fir_las, .paginations .fir_las:hover {
+    width: 34px;
+    height: 28px;
+    text-align: center
+}
+
+.article_container {
+    padding: 10px
+}
+
+.article_container h1 {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-bottom: 10px
+}
+
+.article_info {
+    padding: 10px 0;
+    border-top: #01a99b solid 5px;
+    line-height: 1.5em;
+    color: #999;
+    font-size: 12px
+}
+
+.article_info a {
+    color: #999
+}
+
+.article_info a:hover {
+    text-decoration: underline
+}
+
+.context {
+    overflow: hidden
+}
+
+#post_content {
+    padding: 0 15px
+}
+
+#post_content a {
+    text-decoration: underline
+}
+
+.context, .context p, .context a, .context pre {
+    line-height: 2em;
+    font-size: 14px
+}
+
+.context ol, .context ul {
+    margin-left: 40px
+}
+
+.context ol li, .context ul li {
+    line-height: 2em
+}
+
+.context ol li {
+    list-style-type: decimal
+}
+
+.context ul li {
+    list-style: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/zt_con_li.gif)
+}
+
+.context h3, .context h4, .context h5 {
+    border-bottom: #eee 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 20px
+}
+
+.context h2 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 20px 9px 20px;
+    line-height: 18px;
+    border-left: 4px solid #01a99b;
+    background-color: #f3f3f3
+}
+
+.context p embed, .context object {
+    margin: 0 auto
+}
+
+.context code {
+    background: #fff8df;
+    color: #9c2e0e;
+    font-style: italic;
+    padding: 2px 3px;
+    line-height: 2em
+}
+
+.context table {
+    border-top: solid 1px #ddd;
+    border-left: solid 1px #ddd;
+    width: 100%;
+    margin-bottom: 16px
+}
+
+.context table th {
+    background-color: #f9f9f9;
+    text-align: center
+}
+
+.context table td, .article-content table th {
+    border-bottom: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    padding: 5px 10px
+}
+
+.context .alignleft {
+    float: left;
+    text-align: left;
+    margin-right: 10px
+}
+
+.context .aligncenter {
+    margin: 0 auto;
+    text-align: center;
+    display: block
+}
+
+.context .alignright {
+    float: right;
+    text-align: right;
+    margin-left: 10px
+}
+
+.context .wp-caption {
+    border: solid 1px #eee;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 2px 2px 0 #fbfbfb;
+    margin-bottom: 15px;
+    max-width: 100%
+}
+
+.context .wp-caption:hover {
+    border-color: #ddd
+}
+
+.context .wp-caption-text {
+    margin: 5px -5px -5px;
+    border-radius: 0 0 2px 2px;
+    background-color: #fbfbfb;
+    border-top: 1px solid #eee;
+    padding: 5px;
+    color: #999
+}
+
+.context .article_tags {
+    font-size: 12px;
+    line-height: 40px;
+    margin-top: 15px;
+    text-align: center;
+    border-top: 1px #cdcdcd dashed;
+    border-bottom: 1px #cdcdcd dashed
+}
+
+.context .img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%
+}
+
+.baishare {
+    float: left;
+    margin: 8px 0 0 0;
+    _margin: 5px 14px 0 0
+}
+
+#authorarea {
+    position: relative;
+    float: left;
+    width: 100px
+}
+
+.author_arrow {
+    position: absolute;
+    float: left;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #fff transparent transparent;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    top: 42px;
+    left: 80px
+}
+
+.authorinfo {
+    height: 80px;
+    padding-left: 110px
+}
+
+.post-navigation {
+    clear: both;
+    overflow: hidden
+}
+
+.post-navigation div {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    color: #999
+}
+
+.post-next {
+    float: right;
+    text-align: right;
+    padding-right: 40px
+}
+
+.post-previous {
+    float: left;
+    padding-left: 40px
+}
+
+.post-navigation div a:after {
+    position: absolute;
+    color: #CCC;
+    font-size: 56px;
+    margin-top: -11px;
+    height: 22px;
+    line-height: 22px;
+    top: 34%
+}
+
+.post-previous a:after {
+    content: '«';
+    left: 0
+}
+
+.post-next a:after {
+    content: '»';
+    right: 0
+}
+
+.related {
+    overflow: hidden;
+    height: 750px
+}
+
+.related ul {
+    margin-left: -1px
+}
+
+.related_box {
+    float: left;
+    width: 24.8%;
+    height: 250px;
+    border-left: 1px #5f6e7e solid
+}
+
+.related_box:hover {
+    background: #01a99b
+}
+
+.related_box a:hover {
+    color: #fff
+}
+
+.related_box .r_title {
+    padding: 0 8px;
+    text-align: center
+}
+
+.related_box .r_pic {
+    margin: 8px auto;
+    width: 140px;
+    height: 194px
+}
+
+.related_box .r_pic img {
+    width: 140px;
+    height: 194px
+}
+
+#content table, #content button {
+    margin: 10px auto
+}
+
+#content p {
+    margin: 0 0 20px 0
+}
+
+#content hr {
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/sprite-2.png) no-repeat -1px -93px;
+    height: 3px;
+    border: 0;
+    margin: 15px 0
+}
+
+#content .content_post ol li {
+    list-style: decimal inside;
+    color: #272727;
+    line-height: 26px;
+    font-size: 13px
+}
+
+#content .content_post ul li {
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/li.png) no-repeat;
+    text-indent: 1.3em;
+    color: #272727;
+    line-height: 26px;
+    font-size: 13px
+}
+
+#content b, #content strong {
+    font-weight: blod
+}
+
+#content i, #content em, #content var, #content dfn {
+    font-style: italic
+}
+
+#content th, #content td {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 1px;
+    line-height: 2em
+}
+
+#content th {
+    font-weight: 700;
+    padding: 1px
+}
+
+#content td {
+    text-align: inherit;
+    padding: 1px
+}
+
+#content .pagelist {
+    padding: 10px 0;
+    background: #f3f3f3;
+    text-align: center;
+    margin-top: 20px
+}
+
+#content .pagelist a {
+    margin-right: 10px
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 15px 5px 0
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 5px 15px
+}
+
+#comments {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    height: auto;
+    padding-top: 5px
+}
+
+#comments_box .navigation {
+    margin-top: -50px;
+    margin-right: 10px;
+    font-size: 12px
+}
+
+#comments_box .pagination a, #comments_box .pagination span, #comments_box .pagination .current {
+    line-height: 20px;
+    height: 20px
+}
+
+#respond {
+    margin: 10px 10px 20px 10px;
+    border-top: 5px solid #01a99b;
+    padding-top: 10px
+}
+
+#respond p {
+    line-height: 30px;
+    text-align: right
+}
+
+#respond h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    height: 25px
+}
+
+.comt-box {
+    border: solid 1px #DDD;
+    border-color: #c6c6c6 #CCC #CCC #c6c6c6;
+    border-radius: 3px;
+    padding: 8px;
+    box-shadow: inset 2px 0 2px #f2f2f2, inset 0 2px 2px #EEE, 0 2px 0 #f8f8f8, 2px 0 0 #f8f8f8;
+    background-color: white;
+    clear: right
+}
+
+.comt-area {
+    _margin-top: -35px;
+    border: 0;
+    background: none;
+    width: 100%;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+    min-height: 70px;
+    box-shadow: none
+}
+
+.comt-ctrl {
+    position: relative;
+    margin: 0 -8px -8px;
+    _margin-right: -10px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 0 0 3px 3px;
+    border-top: solid 1px #DDD;
+    background-color: #fbfbfb;
+    box-shadow: inset 0 1px 0 #fbfbfb;
+    color: #999
+}
+
+.comt-submit {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    border: solid 1px #CCC;
+    height: 34px;
+    width: 120px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+    font-size: 12px;
+    border-radius: 0 0 3px 0;
+    background-image: -webkit-linear-gradient(#f6f6f6, #e2e2e2);
+    text-shadow: 0 -1px 0 white
+}
+
+#comment-author-info {
+    margin-bottom: 10px;
+    height: 27px
+}
+
+#comment-author-info label {
+    margin-left: 5px
+}
+
+#comment-author-info input {
+    width: 20.5%;
+    margin-left: -4px;
+    margin-top: -5px \9;
+    vertical-align: middle \9
+}
+
+.comment_input {
+    margin-left: 27px
+}
+
+#real-avatar {
+    float: left;
+    width: 27px
+}
+
+#real-avatar img {
+    width: 27px;
+    height: 27px
+}
+
+.comt-addsmilies, .comt-addcode {
+    float: left;
+    color: #888;
+    padding: 0 10px
+}
+
+.comt-smilies {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 30px;
+    background-color: #fbfbfb;
+    overflow: hidden
+}
+
+.comt-smilies a {
+    float: left;
+    padding: 8px 1px 0
+}
+
+.comt-num {
+    font-size: 12px;
+    color: #999;
+    float: right;
+    margin-right: 140px
+}
+
+.comt-num em {
+    font-weight: bold;
+    font-size: 14px
+}
+
+.commentlist .comment {
+    list-style: none;
+    border-top: 1px solid #ddd
+}
+
+.commentlist li.comment ul.children {
+    margin-left: 20px
+}
+
+.commentlist .depth-1 {
+    margin: 0
+}
+
+.commentlist li {
+    position: relative
+}
+
+.commentlist .thread-even {
+    background: #fafafa
+}
+
+.commentlist .comment-body {
+    padding: 10px;
+    border-left: 5px solid transparent
+}
+
+.commentlist .comment-body:hover {
+    background: #f5f5f5;
+    border-left: 5px solid #01a99b
+}
+
+.commentlist .comment-body p {
+    margin: 5px 0 5px 50px;
+    line-height: 22px
+}
+
+.reply a:link, .reply a:visited {
+    text-align: center;
+    font-size: 12px
+}
+
+.datetime {
+    font-size: 12px;
+    color: #aaa;
+    text-shadow: 0 1px 0 #fff;
+    margin-left: 50px
+}
+
+.commentmetadata {
+    font-size: 12px;
+    color: #aaa;
+    text-shadow: 0 1px 0 #fff;
+    margin-left: 50px
+}
+
+ol.commentlist li div.vcard img.avatar {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: left;
+    margin: 4px 10px 0 0;
+    border-radius: 5px
+}
+
+ol.commentlist li div.floor {
+    float: right;
+    color: #bbb
+}
+
+.children li.comment-author-admin {
+    border-top: #01a99b solid 2px
+}
+
+#footnav a, #friendlink a {
+    color: #888
+}
+
+#footnav a:hover, #friendlink a:hover {
+    color: #01a99b
+}
+
+#footer {
+    text-align: center;
+    background: #222;
+    padding: 20px 0 15px 0;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.5em;
+    margin-top: 50px
+}
+
+#footer p {
+    text-align: center
+}
+
+.footnav {
+    line-height: 30px;
+    font-size: 14px
+}
+
+.footnav ul {
+    list-style: none;
+    text-align: center
+}
+
+.footnav ul li {
+    height: 30px;
+    line-height: 30px;
+    display: inline;
+    padding: 0 10px 0 0
+}
+
+.footnav ul ul {
+    display: none
+}
+
+.copyright {
+    color: #666
+}
+
+.copyright p {
+    line-height: 2em
+}
+
+.copyright a {
+    color: #666
+}
+
+.copyright a:hover {
+    color: #01a99b
+}
+
+#footer p.author a {
+    color: #444
+}
+
+#footer p.author a:hover {
+    text-decoration: underline
+}
+
+#tbox {
+    width: 45px;
+    float: right;
+    position: fixed;
+    right: 20px;
+    bottom: 270px
+}
+
+#pinglun, #home, #gotop {
+    width: 45px;
+    height: 45px;
+    background: #01a99b url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/icon.png) no-repeat;
+    display: block;
+    margin-bottom: 5px;
+    filter: alpha(Opacity=50);
+    -moz-opacity: .5;
+    opacity: .5
+}
+
+#pinglun:hover, #home:hover, #gotop:hover {
+    filter: alpha(Opacity=100);
+    -moz-opacity: 1;
+    opacity: 1
+}
+
+#pinglun {
+    background-position: 0 -50px
+}
+
+#home {
+    background-position: 0 5px
+}
+
+#gotop {
+    background-position: 0 -100px
+}
+
+.slider {
+    width: 648px;
+    overflow: hidden
+}
+
+#focus {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+    position: relative
+}
+
+#focus ul {
+    height: 430px;
+    position: absolute
+}
+
+#focus ul li {
+    float: left;
+    width: 648px;
+    height: 370px;
+    overflow: hidden;
+    position: relative;
+    background: #ccc
+}
+
+#focus ul li div {
+    position: absolute;
+    overflow: hidden
+}
+
+#focus .button {
+    position: absolute;
+    width: 648px;
+    height: 10px;
+    padding: 5px 10px;
+    right: 0;
+    bottom: 0;
+    text-align: right
+}
+
+#focus .button span {
+    display: inline-block;
+    _display: inline;
+    _zoom: 1;
+    width: 25px;
+    height: 10px;
+    _font-size: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #fff
+}
+
+#focus .button span.on {
+    background: #fff
+}
+
+#focus .preNext {
+    width: 45px;
+    height: 100px;
+    position: absolute;
+    top: 125px;
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/css/style/../../images/sprite.png) no-repeat 0 0;
+    cursor: pointer
+}
+
+#focus .pre {
+    left: 0
+}
+
+#focus .next {
+    right: 0;
+    background-position: right top
+}
+
+#focus ul li a {
+    display: block;
+    overflow: hidden
+}
+
+#focus ul li a img {
+    width: 650px;
+    height: auto
+}
+
+.flex-caption {
+    max-width: 610px;
+    left: 0;
+    bottom: 30px;
+    background: #01a99b;
+    opacity: .8;
+    color: #fff;
+    padding: 10px 20px
+}
+
+.flex-caption a {
+    color: #fff
+}
+
+.flex-caption:hover {
+    opacity: 1
+}
+
+.flex-caption .btn {
+    display: none
+}
+
+.slides_entry {
+    display: none
+}
+
+.readers-list {
+    line-height: 19px !important;
+    text-align: left;
+    overflow: hidden;
+    _zoom: 1
+}
+
+.readers-list li {
+    width: 200px;
+    float: left;
+    *margin-right: -1px;
+}
+
+.readers-list a, .readers-list a:hover strong {
+    background-color: #f2f2f2;
+    background-image: -webkit-linear-gradient(#f8f8f8, #f2f2f2);
+    background-image: -moz-linear-gradient(#f8f8f8, #f2f2f2);
+    background-image: linear-gradient(#f8f8f8, #f2f2f2)
+}
+
+.readers-list a {
+    font-size: 12px;
+    line-height: 19px !important;
+    position: relative;
+    display: block;
+    height: 36px;
+    margin: 4px;
+    padding: 4px 4px 4px 44px;
+    color: #999;
+    overflow: hidden;
+    border: #ccc 1px solid;
+    border-radius: 2px;
+    box-shadow: #eee 0 0 2px
+}
+
+.readers-list img, .readers-list em, .readers-list strong {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+.readers-list img {
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin: 0 8px 0 -40px;
+    border-radius: 2px
+}
+
+.readers-list em {
+    color: #666;
+    font-style: normal;
+    margin-right: 10px
+}
+
+.readers-list strong {
+    color: #ddd;
+    width: 40px;
+    text-align: right;
+    position: absolute;
+    right: 6px;
+    top: 4px;
+    font: bold 14px/16px microsoft yahei
+}
+
+.readers-list a:hover {
+    border-color: #bbb;
+    box-shadow: #ccc 0 0 2px;
+    background-color: #fff;
+    background-image: none
+}
+
+.readers-list a:hover img {
+    opacity: .6;
+    margin-left: 0
+}
+
+.readers-list a:hover em {
+    color: #01a99b;
+    font: bold 12px/36px microsoft yahei
+}
+
+.readers-list a:hover strong {
+    color: #01a99b;
+    right: 150px;
+    top: 0;
+    text-align: center;
+    border-right: #ccc 1px solid;
+    height: 44px;
+    line-height: 40px
+}
+
+.readers-list span.name {
+    word-break: break-all;
+    max-width: 120px;
+    display: block
+}
+
+.articles_all {
+    line-height: 35px;
+    padding-left: 15px;
+    border-top: #01a99b solid 5px
+}
+
+.car-container {
+    padding: 0 15px 10px 15px
+}
+
+.car-collapse .car-yearmonth {
+    cursor: s-resize
+}
+
+a.car-toggler {
+    line-height: 30px;
+    font-size: 14px;
+    color: #c30
+}
+
+.car-list li {
+    list-style: none;
+    line-height: 24px
+}
+
+.car-list li ul {
+    padding-left: 30px
+}
+
+.car-plus, .car-minus {
+    width: 15px;
+    display: block;
+    float: left;
+    font-family: Courier New, Lucida Console, MS Gothic, MS mincho
+}
+
+.car-monthlisting span {
+    color: #ccc
+}
+
+.flink, .linkstandard {
+    list-style: none
+}
+
+.flink ul ul, .linkstandard ul {
+    padding: 0 15px 10px 15px;
+    list-style: none;
+    line-height: 24px
+}
+
+.flink ul ul li {
+    float: left;
+    height: 30px;
+    width: 25%;
+    overflow: hidden;
+    line-height: 30px
+}
+
+.flink ul li h2, .linkstandard h2 {
+    clear: both;
+    font-size: 16px
+}
+
+.cont_none ul, .cont_none ul li {
+    list-style: none;
+    margin: 0
+}
+
+.needyou {
+    float: left;
+    width: 910px;
+    text-align: center;
+    font: "宋体";
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd700;
+    line-height: 60px;
+    height: 60px
+}
+
+@media only screen and (max-width: 0) {
+    .container {
+        max-width: 360px !important
+    }
+
+    .mainmenus {
+        margin-bottom: 1.5em
+    }
+
+    #sidebar, .subsidiary, .slider, #rss, .banner, .article_related {
+        display: noe1 !important
+    }
+
+    .mainleft {
+        margin: 0 auto;
+        overflow: visible
+    }
+
+    #post_container li {
+        max-width: 316px
+    }
+
+    #comment-author-info {
+        height: auto
+    }
+
+    #comment-author-info input {
+        width: 60.5%;
+        margin-bottom: 5px
+    }
+
+    .search_phone {
+        display: block
+    }
+
+    #post_container {
+        margin-left: 0
+    }
+
+    #post_container li {
+        width: 100%;
+        margin-left: 0;
+        max-width: 100%
+    }
+
+    #post_container li .thumbnail a {
+        text-align: center
+    }
+
+    #post_container li .arrow-catpanel-top {
+        display: none
+    }
+
+    #post_container li .zoomOverlay {
+        display: none !important
+    }
+
+    #tbox {
+        right: 0
+    }
+
+    .topnav {
+        overflow: visible
+    }
+
+    .topnav .menu-button {
+        display: block
+    }
+
+    #menus {
+        display: none;
+        padding: 15px
+    }
+
+    #menus.open {
+        display: block;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out
+    }
+
+    #menus li {
+        height: auto;
+        width: 100% !important
+    }
+
+    #menus li a {
+        width: 90% !important;
+        padding: 0 5% !important
+    }
+
+    .topnav li .sub-menu {
+        position: relative;
+        display: block !important;
+        top: 0;
+        left: 20px
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 980px) {
+    .container {
+        max-width: 0 !important
+    }
+
+    .mainmenus {
+        margin-bottom: 1.5em
+    }
+
+    #sidebar, .subsidiary, .slider {
+        display: noe1 !important
+    }
+
+    #post_container {
+        margin-left: -7px !important
+    }
+
+    #post_container li {
+        width: 314px;
+        margin-left: 7px !important
+    }
+
+    #tbox {
+        right: 10px !important
+    }
+}
+
+@media only screen and (min-width: 1330px) {
+    .container {
+        max-width: 1312px !important
+    }
+
+    .slider {
+        width: 980px !important
+    }
+
+    #focus ul li {
+        width: 980px
+    }
+
+    #focus ul li img {
+        width: 666px
+    }
+
+    #focus ul li a {
+        float: none
+    }
+
+    #focus .button {
+        width: 980px
+    }
+
+    .slides_entry {
+        display: block !important;
+        margin-top: 10px;
+        font-size: 14.7px;
+        line-height: 1.5em
+    }
+
+    .flex-caption h2 {
+        line-height: 1.5em;
+        margin-bottom: 20px;
+        padding: 10px 0 20px 0;
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: 1px #fff dashed
+    }
+
+    .flex-caption .btn {
+        display: block !important;
+        margin-top: 30px;
+        width: 55px
+    }
+
+    .flex-caption .btn a {
+        color: #01a99b
+    }
+
+    #focus ul li a img {
+        width: 650px !important
+    }
+
+    .related_box {
+        width: 168px !important
+    }
+}
+
+.new {
+    background-image: url(http://gtms03.alicdn.com/tps/i3/TB1jjSUIpXXXXcAXFXX61VfFpXX-20-11.png)
+}
+
+.hot, .hot-12, .new {
+    height: 11px;
+    width: 20px;
+    overflow: hidden
+}
+
+.new {
+    position: absolute;
+    top: 3px;
+    right: 0
+}
+
+.shake, .shake-little, .shake-slow, .shake-hard, .shake-horizontal, .shake-vertical, .shake-rotate, .shake-opacity, .shake-crazy, .shake-chunk {
+    display: inline-block;
+    transform-origin: center center
+}
+
+.shake-freeze, .shake-constant.shake-constant--hover:hover, .shake-trigger:hover .shake-constant.shake-constant--hover {
+    animation-play-state: paused
+}
+
+.shake-freeze:hover, .shake-trigger:hover .shake-freeze, .shake:hover, .shake-trigger:hover .shake, .shake-little:hover, .shake-trigger:hover .shake-little, .shake-slow:hover, .shake-trigger:hover .shake-slow, .shake-hard:hover, .shake-trigger:hover .shake-hard, .shake-horizontal:hover, .shake-trigger:hover .shake-horizontal, .shake-vertical:hover, .shake-trigger:hover .shake-vertical, .shake-rotate:hover, .shake-trigger:hover .shake-rotate, .shake-opacity:hover, .shake-trigger:hover .shake-opacity, .shake-crazy:hover, .shake-trigger:hover .shake-crazy, .shake-chunk:hover, .shake-trigger:hover .shake-chunk {
+    animation-play-state: running
+}
+
+@keyframes shake {
+    2% {
+        transform: translate(-0.5px, .5px) rotate(0.5deg)
+    }
+    4% {
+        transform: translate(-0.5px, -.5px) rotate(0.5deg)
+    }
+    6% {
+        transform: translate(2.5px, 2.5px) rotate(-0.5deg)
+    }
+    8% {
+        transform: translate(2.5px, 2.5px) rotate(-0.5deg)
+    }
+    10% {
+        transform: translate(2.5px, -1.5px) rotate(1.5deg)
+    }
+    12% {
+        transform: translate(-1.5px, 2.5px) rotate(-0.5deg)
+    }
+    14% {
+        transform: translate(0.5px, 2.5px) rotate(1.5deg)
+    }
+    16% {
+        transform: translate(-1.5px, -1.5px) rotate(0.5deg)
+    }
+    18% {
+        transform: translate(0.5px, -1.5px) rotate(0.5deg)
+    }
+    20% {
+        transform: translate(2.5px, -1.5px) rotate(0.5deg)
+    }
+    22% {
+        transform: translate(0.5px, .5px) rotate(-0.5deg)
+    }
+    24% {
+        transform: translate(1.5px, 1.5px) rotate(-0.5deg)
+    }
+    26% {
+        transform: translate(1.5px, -.5px) rotate(0.5deg)
+    }
+    28% {
+        transform: translate(2.5px, -.5px) rotate(0.5deg)
+    }
+    30% {
+        transform: translate(1.5px, 2.5px) rotate(-0.5deg)
+    }
+    32% {
+        transform: translate(1.5px, 1.5px) rotate(1.5deg)
+    }
+    34% {
+        transform: translate(-1.5px, .5px) rotate(-0.5deg)
+    }
+    36% {
+        transform: translate(2.5px, 2.5px) rotate(-0.5deg)
+    }
+    38% {
+        transform: translate(-1.5px, -1.5px) rotate(-0.5deg)
+    }
+    40% {
+        transform: translate(1.5px, -.5px) rotate(1.5deg)
+    }
+    42% {
+        transform: translate(0.5px, -1.5px) rotate(1.5deg)
+    }
+    44% {
+        transform: translate(-1.5px, -1.5px) rotate(1.5deg)
+    }
+    46% {
+        transform: translate(2.5px, 2.5px) rotate(1.5deg)
+    }
+    48% {
+        transform: translate(0.5px, .5px) rotate(0.5deg)
+    }
+    50% {
+        transform: translate(1.5px, -1.5px) rotate(-0.5deg)
+    }
+    52% {
+        transform: translate(-1.5px, 2.5px) rotate(-0.5deg)
+    }
+    54% {
+        transform: translate(-1.5px, -.5px) rotate(-0.5deg)
+    }
+    56% {
+        transform: translate(1.5px, .5px) rotate(0.5deg)
+    }
+    58% {
+        transform: translate(0.5px, -.5px) rotate(0.5deg)
+    }
+    60% {
+        transform: translate(0.5px, 1.5px) rotate(0.5deg)
+    }
+    62% {
+        transform: translate(2.5px, -.5px) rotate(0.5deg)
+    }
+    64% {
+        transform: translate(1.5px, -.5px) rotate(0.5deg)
+    }
+    66% {
+        transform: translate(0.5px, -1.5px) rotate(-0.5deg)
+    }
+    68% {
+        transform: translate(-0.5px, .5px) rotate(1.5deg)
+    }
+    70% {
+        transform: translate(0.5px, 1.5px) rotate(0.5deg)
+    }
+    72% {
+        transform: translate(2.5px, -.5px) rotate(-0.5deg)
+    }
+    74% {
+        transform: translate(0.5px, 1.5px) rotate(-0.5deg)
+    }
+    76% {
+        transform: translate(-0.5px, 1.5px) rotate(0.5deg)
+    }
+    78% {
+        transform: translate(0.5px, .5px) rotate(-0.5deg)
+    }
+    80% {
+        transform: translate(2.5px, -1.5px) rotate(0.5deg)
+    }
+    82% {
+        transform: translate(0.5px, 1.5px) rotate(0.5deg)
+    }
+    84% {
+        transform: translate(-1.5px, -1.5px) rotate(-0.5deg)
+    }
+    86% {
+        transform: translate(0.5px, 2.5px) rotate(1.5deg)
+    }
+    88% {
+        transform: translate(0.5px, 2.5px) rotate(-0.5deg)
+    }
+    90% {
+        transform: translate(2.5px, 1.5px) rotate(1.5deg)
+    }
+    92% {
+        transform: translate(-1.5px, -1.5px) rotate(0.5deg)
+    }
+    94% {
+        transform: translate(-0.5px, -1.5px) rotate(-0.5deg)
+    }
+    96% {
+        transform: translate(-0.5px, -1.5px) rotate(0.5deg)
+    }
+    98% {
+        transform: translate(-0.5px, 1.5px) rotate(0.5deg)
+    }
+    0%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake:hover, .shake-trigger:hover .shake, .shake.shake-freeze, .shake.shake-constant {
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-little {
+    2% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    4% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    6% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    8% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    10% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    12% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    14% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    16% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    18% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    20% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    22% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    24% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    26% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    28% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    30% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    32% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    34% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    36% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    38% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    40% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    42% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    44% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    46% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    48% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    50% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    52% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    54% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    56% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    58% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    60% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    62% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    64% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    66% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    68% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    70% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    72% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    74% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    76% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    78% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    80% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    82% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    84% {
+        transform: translate(1px, 1px) rotate(0.5deg)
+    }
+    86% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    88% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    90% {
+        transform: translate(1px, 0px) rotate(0.5deg)
+    }
+    92% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    94% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    96% {
+        transform: translate(0px, 0px) rotate(0.5deg)
+    }
+    98% {
+        transform: translate(0px, 1px) rotate(0.5deg)
+    }
+    0%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-little:hover, .shake-trigger:hover .shake-little, .shake-little.shake-freeze, .shake-little.shake-constant {
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-name: shake-little;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-slow {
+    2% {
+        transform: translate(7px, 5px) rotate(-1.5deg)
+    }
+    4% {
+        transform: translate(-7px, 1px) rotate(-0.5deg)
+    }
+    6% {
+        transform: translate(-7px, -5px) rotate(2.5deg)
+    }
+    8% {
+        transform: translate(4px, -2px) rotate(1.5deg)
+    }
+    10% {
+        transform: translate(4px, 0px) rotate(3.5deg)
+    }
+    12% {
+        transform: translate(10px, -8px) rotate(-1.5deg)
+    }
+    14% {
+        transform: translate(-5px, -6px) rotate(3.5deg)
+    }
+    16% {
+        transform: translate(5px, -7px) rotate(-0.5deg)
+    }
+    18% {
+        transform: translate(1px, 3px) rotate(-1.5deg)
+    }
+    20% {
+        transform: translate(-4px, 3px) rotate(-2.5deg)
+    }
+    22% {
+        transform: translate(-4px, -3px) rotate(0.5deg)
+    }
+    24% {
+        transform: translate(2px, 3px) rotate(3.5deg)
+    }
+    26% {
+        transform: translate(-7px, -4px) rotate(-0.5deg)
+    }
+    28% {
+        transform: translate(-7px, 7px) rotate(3.5deg)
+    }
+    30% {
+        transform: translate(2px, 9px) rotate(0.5deg)
+    }
+    32% {
+        transform: translate(10px, -8px) rotate(1.5deg)
+    }
+    34% {
+        transform: translate(-2px, -8px) rotate(3.5deg)
+    }
+    36% {
+        transform: translate(-6px, -2px) rotate(-0.5deg)
+    }
+    38% {
+        transform: translate(2px, 6px) rotate(3.5deg)
+    }
+    40% {
+        transform: translate(-2px, -9px) rotate(1.5deg)
+    }
+    42% {
+        transform: translate(5px, -3px) rotate(-1.5deg)
+    }
+    44% {
+        transform: translate(7px, 7px) rotate(-0.5deg)
+    }
+    46% {
+        transform: translate(5px, -6px) rotate(2.5deg)
+    }
+    48% {
+        transform: translate(7px, -2px) rotate(-0.5deg)
+    }
+    50% {
+        transform: translate(2px, 2px) rotate(2.5deg)
+    }
+    52% {
+        transform: translate(-1px, -2px) rotate(1.5deg)
+    }
+    54% {
+        transform: translate(-4px, -6px) rotate(-1.5deg)
+    }
+    56% {
+        transform: translate(7px, -3px) rotate(-1.5deg)
+    }
+    58% {
+        transform: translate(-5px, 2px) rotate(-0.5deg)
+    }
+    60% {
+        transform: translate(3px, 2px) rotate(-1.5deg)
+    }
+    62% {
+        transform: translate(6px, 1px) rotate(-2.5deg)
+    }
+    64% {
+        transform: translate(-4px, 9px) rotate(3.5deg)
+    }
+    66% {
+        transform: translate(8px, -6px) rotate(-2.5deg)
+    }
+    68% {
+        transform: translate(-2px, -4px) rotate(2.5deg)
+    }
+    70% {
+        transform: translate(-5px, -3px) rotate(-0.5deg)
+    }
+    72% {
+        transform: translate(-3px, 6px) rotate(-0.5deg)
+    }
+    74% {
+        transform: translate(-9px, 9px) rotate(1.5deg)
+    }
+    76% {
+        transform: translate(-5px, 9px) rotate(0.5deg)
+    }
+    78% {
+        transform: translate(10px, -1px) rotate(1.5deg)
+    }
+    80% {
+        transform: translate(-9px, 4px) rotate(1.5deg)
+    }
+    82% {
+        transform: translate(-8px, 5px) rotate(-1.5deg)
+    }
+    84% {
+        transform: translate(6px, -2px) rotate(0.5deg)
+    }
+    86% {
+        transform: translate(0px, 5px) rotate(-2.5deg)
+    }
+    88% {
+        transform: translate(7px, -8px) rotate(0.5deg)
+    }
+    90% {
+        transform: translate(-7px, 9px) rotate(-0.5deg)
+    }
+    92% {
+        transform: translate(5px, 0px) rotate(-2.5deg)
+    }
+    94% {
+        transform: translate(-7px, 7px) rotate(3.5deg)
+    }
+    96% {
+        transform: translate(-9px, -5px) rotate(-0.5deg)
+    }
+    98% {
+        transform: translate(-8px, -6px) rotate(3.5deg)
+    }
+    0%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-slow:hover, .shake-trigger:hover .shake-slow, .shake-slow.shake-freeze, .shake-slow.shake-constant {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: shake-slow;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-hard {
+    2% {
+        transform: translate(-1px, -5px) rotate(-2.5deg)
+    }
+    4% {
+        transform: translate(-5px, -8px) rotate(2.5deg)
+    }
+    6% {
+        transform: translate(4px, 2px) rotate(-0.5deg)
+    }
+    8% {
+        transform: translate(1px, 6px) rotate(-1.5deg)
+    }
+    10% {
+        transform: translate(-3px, -6px) rotate(3.5deg)
+    }
+    12% {
+        transform: translate(10px, 5px) rotate(-2.5deg)
+    }
+    14% {
+        transform: translate(-5px, 8px) rotate(-0.5deg)
+    }
+    16% {
+        transform: translate(7px, 6px) rotate(-2.5deg)
+    }
+    18% {
+        transform: translate(4px, -7px) rotate(1.5deg)
+    }
+    20% {
+        transform: translate(-2px, 2px) rotate(0.5deg)
+    }
+    22% {
+        transform: translate(-1px, 9px) rotate(-0.5deg)
+    }
+    24% {
+        transform: translate(1px, -2px) rotate(0.5deg)
+    }
+    26% {
+        transform: translate(-7px, -9px) rotate(1.5deg)
+    }
+    28% {
+        transform: translate(-5px, -2px) rotate(-2.5deg)
+    }
+    30% {
+        transform: translate(-4px, 7px) rotate(3.5deg)
+    }
+    32% {
+        transform: translate(8px, 2px) rotate(2.5deg)
+    }
+    34% {
+        transform: translate(5px, -5px) rotate(0.5deg)
+    }
+    36% {
+        transform: translate(-8px, -8px) rotate(2.5deg)
+    }
+    38% {
+        transform: translate(-7px, -2px) rotate(2.5deg)
+    }
+    40% {
+        transform: translate(8px, 0px) rotate(-1.5deg)
+    }
+    42% {
+        transform: translate(0px, -2px) rotate(2.5deg)
+    }
+    44% {
+        transform: translate(-1px, 1px) rotate(3.5deg)
+    }
+    46% {
+        transform: translate(10px, -5px) rotate(2.5deg)
+    }
+    48% {
+        transform: translate(-1px, 7px) rotate(0.5deg)
+    }
+    50% {
+        transform: translate(-8px, -2px) rotate(1.5deg)
+    }
+    52% {
+        transform: translate(-9px, 8px) rotate(2.5deg)
+    }
+    54% {
+        transform: translate(2px, 9px) rotate(-2.5deg)
+    }
+    56% {
+        transform: translate(-2px, 0px) rotate(2.5deg)
+    }
+    58% {
+        transform: translate(1px, 1px) rotate(-2.5deg)
+    }
+    60% {
+        transform: translate(10px, -9px) rotate(-0.5deg)
+    }
+    62% {
+        transform: translate(5px, 4px) rotate(0.5deg)
+    }
+    64% {
+        transform: translate(2px, -4px) rotate(0.5deg)
+    }
+    66% {
+        transform: translate(-9px, -7px) rotate(2.5deg)
+    }
+    68% {
+        transform: translate(-5px, -1px) rotate(0.5deg)
+    }
+    70% {
+        transform: translate(9px, -1px) rotate(2.5deg)
+    }
+    72% {
+        transform: translate(8px, 8px) rotate(-1.5deg)
+    }
+    74% {
+        transform: translate(-1px, 4px) rotate(2.5deg)
+    }
+    76% {
+        transform: translate(3px, -7px) rotate(1.5deg)
+    }
+    78% {
+        transform: translate(-7px, 0px) rotate(-2.5deg)
+    }
+    80% {
+        transform: translate(-5px, 5px) rotate(2.5deg)
+    }
+    82% {
+        transform: translate(6px, 6px) rotate(-0.5deg)
+    }
+    84% {
+        transform: translate(10px, 8px) rotate(-0.5deg)
+    }
+    86% {
+        transform: translate(4px, 10px) rotate(-0.5deg)
+    }
+    88% {
+        transform: translate(-5px, -9px) rotate(-1.5deg)
+    }
+    90% {
+        transform: translate(-8px, 9px) rotate(1.5deg)
+    }
+    92% {
+        transform: translate(6px, 6px) rotate(-1.5deg)
+    }
+    94% {
+        transform: translate(-3px, -4px) rotate(-1.5deg)
+    }
+    96% {
+        transform: translate(6px, -5px) rotate(0.5deg)
+    }
+    98% {
+        transform: translate(10px, 4px) rotate(-0.5deg)
+    }
+    100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+.shake-hard:hover, .shake-trigger:hover .shake-hard, .shake-hard.shake-freeze, .shake-hard.shake-constant {
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-name: shake-hard;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-horizontal {
+    2% {
+        transform: translate(1px, 0) rotate(0)
+    }
+    4% {
+        transform: translate(4px, 0) rotate(0)
+    }
+    6% {
+        transform: translate(7px, 0) rotate(0)
+    }
+    8% {
+        transform: translate(-1px, 0) rotate(0)
+    }
+    10% {
+        transform: translate(-1px, 0) rotate(0)
+    }
+    12% {
+        transform: translate(1px, 0) rotate(0)
+    }
+    14% {
+        transform: translate(-3px, 0) rotate(0)
+    }
+    16% {
+        transform: translate(-8px, 0) rotate(0)
+    }
+    18% {
+        transform: translate(-9px, 0) rotate(0)
+    }
+    20% {
+        transform: translate(-3px, 0) rotate(0)
+    }
+    22% {
+        transform: translate(-9px, 0) rotate(0)
+    }
+    24% {
+        transform: translate(1px, 0) rotate(0)
+    }
+    26% {
+        transform: translate(10px, 0) rotate(0)
+    }
+    28% {
+        transform: translate(9px, 0) rotate(0)
+    }
+    30% {
+        transform: translate(-2px, 0) rotate(0)
+    }
+    32% {
+        transform: translate(9px, 0) rotate(0)
+    }
+    34% {
+        transform: translate(2px, 0) rotate(0)
+    }
+    36% {
+        transform: translate(-5px, 0) rotate(0)
+    }
+    38% {
+        transform: translate(3px, 0) rotate(0)
+    }
+    40% {
+        transform: translate(0px, 0) rotate(0)
+    }
+    42% {
+        transform: translate(4px, 0) rotate(0)
+    }
+    44% {
+        transform: translate(-7px, 0) rotate(0)
+    }
+    46% {
+        transform: translate(-4px, 0) rotate(0)
+    }
+    48% {
+        transform: translate(9px, 0) rotate(0)
+    }
+    50% {
+        transform: translate(-6px, 0) rotate(0)
+    }
+    52% {
+        transform: translate(-3px, 0) rotate(0)
+    }
+    54% {
+        transform: translate(3px, 0) rotate(0)
+    }
+    56% {
+        transform: translate(6px, 0) rotate(0)
+    }
+    58% {
+        transform: translate(-5px, 0) rotate(0)
+    }
+    60% {
+        transform: translate(-6px, 0) rotate(0)
+    }
+    62% {
+        transform: translate(8px, 0) rotate(0)
+    }
+    64% {
+        transform: translate(8px, 0) rotate(0)
+    }
+    66% {
+        transform: translate(-7px, 0) rotate(0)
+    }
+    68% {
+        transform: translate(8px, 0) rotate(0)
+    }
+    70% {
+        transform: translate(6px, 0) rotate(0)
+    }
+    72% {
+        transform: translate(5px, 0) rotate(0)
+    }
+    74% {
+        transform: translate(6px, 0) rotate(0)
+    }
+    76% {
+        transform: translate(7px, 0) rotate(0)
+    }
+    78% {
+        transform: translate(-2px, 0) rotate(0)
+    }
+    80% {
+        transform: translate(1px, 0) rotate(0)
+    }
+    82% {
+        transform: translate(0px, 0) rotate(0)
+    }
+    84% {
+        transform: translate(-6px, 0) rotate(0)
+    }
+    86% {
+        transform: translate(0px, 0) rotate(0)
+    }
+    88% {
+        transform: translate(1px, 0) rotate(0)
+    }
+    90% {
+        transform: translate(-1px, 0) rotate(0)
+    }
+    92% {
+        transform: translate(1px, 0) rotate(0)
+    }
+    94% {
+        transform: translate(4px, 0) rotate(0)
+    }
+    96% {
+        transform: translate(1px, 0) rotate(0)
+    }
+    98% {
+        transform: translate(3px, 0) rotate(0)
+    }
+    0%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-horizontal:hover, .shake-trigger:hover .shake-horizontal, .shake-horizontal.shake-freeze, .shake-horizontal.shake-constant {
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-name: shake-horizontal;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-vertical {
+    2% {
+        transform: translate(0, -8px) rotate(0)
+    }
+    4% {
+        transform: translate(0, -2px) rotate(0)
+    }
+    6% {
+        transform: translate(0, 2px) rotate(0)
+    }
+    8% {
+        transform: translate(0, -7px) rotate(0)
+    }
+    10% {
+        transform: translate(0, 8px) rotate(0)
+    }
+    12% {
+        transform: translate(0, 7px) rotate(0)
+    }
+    14% {
+        transform: translate(0, -8px) rotate(0)
+    }
+    16% {
+        transform: translate(0, 8px) rotate(0)
+    }
+    18% {
+        transform: translate(0, 3px) rotate(0)
+    }
+    20% {
+        transform: translate(0, -6px) rotate(0)
+    }
+    22% {
+        transform: translate(0, -3px) rotate(0)
+    }
+    24% {
+        transform: translate(0, 6px) rotate(0)
+    }
+    26% {
+        transform: translate(0, 10px) rotate(0)
+    }
+    28% {
+        transform: translate(0, -6px) rotate(0)
+    }
+    30% {
+        transform: translate(0, 7px) rotate(0)
+    }
+    32% {
+        transform: translate(0, 5px) rotate(0)
+    }
+    34% {
+        transform: translate(0, 4px) rotate(0)
+    }
+    36% {
+        transform: translate(0, -3px) rotate(0)
+    }
+    38% {
+        transform: translate(0, 9px) rotate(0)
+    }
+    40% {
+        transform: translate(0, -2px) rotate(0)
+    }
+    42% {
+        transform: translate(0, -4px) rotate(0)
+    }
+    44% {
+        transform: translate(0, -8px) rotate(0)
+    }
+    46% {
+        transform: translate(0, 9px) rotate(0)
+    }
+    48% {
+        transform: translate(0, -6px) rotate(0)
+    }
+    50% {
+        transform: translate(0, -2px) rotate(0)
+    }
+    52% {
+        transform: translate(0, -2px) rotate(0)
+    }
+    54% {
+        transform: translate(0, -5px) rotate(0)
+    }
+    56% {
+        transform: translate(0, 5px) rotate(0)
+    }
+    58% {
+        transform: translate(0, -3px) rotate(0)
+    }
+    60% {
+        transform: translate(0, -9px) rotate(0)
+    }
+    62% {
+        transform: translate(0, -4px) rotate(0)
+    }
+    64% {
+        transform: translate(0, 0px) rotate(0)
+    }
+    66% {
+        transform: translate(0, -8px) rotate(0)
+    }
+    68% {
+        transform: translate(0, -2px) rotate(0)
+    }
+    70% {
+        transform: translate(0, -8px) rotate(0)
+    }
+    72% {
+        transform: translate(0, -8px) rotate(0)
+    }
+    74% {
+        transform: translate(0, -2px) rotate(0)
+    }
+    76% {
+        transform: translate(0, 8px) rotate(0)
+    }
+    78% {
+        transform: translate(0, -8px) rotate(0)
+    }
+    80% {
+        transform: translate(0, -8px) rotate(0)
+    }
+    82% {
+        transform: translate(0, 4px) rotate(0)
+    }
+    84% {
+        transform: translate(0, 8px) rotate(0)
+    }
+    86% {
+        transform: translate(0, 4px) rotate(0)
+    }
+    88% {
+        transform: translate(0, 0px) rotate(0)
+    }
+    90% {
+        transform: translate(0, -4px) rotate(0)
+    }
+    92% {
+        transform: translate(0, -2px) rotate(0)
+    }
+    94% {
+        transform: translate(0, -6px) rotate(0)
+    }
+    96% {
+        transform: translate(0, 7px) rotate(0)
+    }
+    98% {
+        transform: translate(0, -2px) rotate(0)
+    }
+    0%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-vertical:hover, .shake-trigger:hover .shake-vertical, .shake-vertical.shake-freeze, .shake-vertical.shake-constant {
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-name: shake-vertical;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-rotate {
+    2% {
+        transform: translate(0, 0) rotate(0.5deg)
+    }
+    4% {
+        transform: translate(0, 0) rotate(-5.5deg)
+    }
+    6% {
+        transform: translate(0, 0) rotate(0.5deg)
+    }
+    8% {
+        transform: translate(0, 0) rotate(1.5deg)
+    }
+    10% {
+        transform: translate(0, 0) rotate(-1.5deg)
+    }
+    12% {
+        transform: translate(0, 0) rotate(-4.5deg)
+    }
+    14% {
+        transform: translate(0, 0) rotate(3.5deg)
+    }
+    16% {
+        transform: translate(0, 0) rotate(3.5deg)
+    }
+    18% {
+        transform: translate(0, 0) rotate(4.5deg)
+    }
+    20% {
+        transform: translate(0, 0) rotate(1.5deg)
+    }
+    22% {
+        transform: translate(0, 0) rotate(3.5deg)
+    }
+    24% {
+        transform: translate(0, 0) rotate(-1.5deg)
+    }
+    26% {
+        transform: translate(0, 0) rotate(-3.5deg)
+    }
+    28% {
+        transform: translate(0, 0) rotate(-2.5deg)
+    }
+    30% {
+        transform: translate(0, 0) rotate(7.5deg)
+    }
+    32% {
+        transform: translate(0, 0) rotate(2.5deg)
+    }
+    34% {
+        transform: translate(0, 0) rotate(7.5deg)
+    }
+    36% {
+        transform: translate(0, 0) rotate(-1.5deg)
+    }
+    38% {
+        transform: translate(0, 0) rotate(4.5deg)
+    }
+    40% {
+        transform: translate(0, 0) rotate(-3.5deg)
+    }
+    42% {
+        transform: translate(0, 0) rotate(-5.5deg)
+    }
+    44% {
+        transform: translate(0, 0) rotate(3.5deg)
+    }
+    46% {
+        transform: translate(0, 0) rotate(-1.5deg)
+    }
+    48% {
+        transform: translate(0, 0) rotate(7.5deg)
+    }
+    50% {
+        transform: translate(0, 0) rotate(6.5deg)
+    }
+    52% {
+        transform: translate(0, 0) rotate(1.5deg)
+    }
+    54% {
+        transform: translate(0, 0) rotate(2.5deg)
+    }
+    56% {
+        transform: translate(0, 0) rotate(-2.5deg)
+    }
+    58% {
+        transform: translate(0, 0) rotate(1.5deg)
+    }
+    60% {
+        transform: translate(0, 0) rotate(-0.5deg)
+    }
+    62% {
+        transform: translate(0, 0) rotate(3.5deg)
+    }
+    64% {
+        transform: translate(0, 0) rotate(-6.5deg)
+    }
+    66% {
+        transform: translate(0, 0) rotate(6.5deg)
+    }
+    68% {
+        transform: translate(0, 0) rotate(7.5deg)
+    }
+    70% {
+        transform: translate(0, 0) rotate(0.5deg)
+    }
+    72% {
+        transform: translate(0, 0) rotate(-0.5deg)
+    }
+    74% {
+        transform: translate(0, 0) rotate(0.5deg)
+    }
+    76% {
+        transform: translate(0, 0) rotate(-5.5deg)
+    }
+    78% {
+        transform: translate(0, 0) rotate(1.5deg)
+    }
+    80% {
+        transform: translate(0, 0) rotate(0.5deg)
+    }
+    82% {
+        transform: translate(0, 0) rotate(-0.5deg)
+    }
+    84% {
+        transform: translate(0, 0) rotate(3.5deg)
+    }
+    86% {
+        transform: translate(0, 0) rotate(6.5deg)
+    }
+    88% {
+        transform: translate(0, 0) rotate(-2.5deg)
+    }
+    90% {
+        transform: translate(0, 0) rotate(6.5deg)
+    }
+    92% {
+        transform: translate(0, 0) rotate(5.5deg)
+    }
+    94% {
+        transform: translate(0, 0) rotate(-5.5deg)
+    }
+    96% {
+        transform: translate(0, 0) rotate(-0.5deg)
+    }
+    98% {
+        transform: translate(0, 0) rotate(-4.5deg)
+    }
+    0%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-rotate:hover, .shake-trigger:hover .shake-rotate, .shake-rotate.shake-freeze, .shake-rotate.shake-constant {
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-name: shake-rotate;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-opacity {
+    10% {
+        transform: translate(1px, -3px) rotate(-1.5deg);
+        opacity: .62
+    }
+    20% {
+        transform: translate(-1px, -3px) rotate(-0.5deg);
+        opacity: .32
+    }
+    30% {
+        transform: translate(4px, 4px) rotate(-1.5deg);
+        opacity: .32
+    }
+    40% {
+        transform: translate(3px, 4px) rotate(1.5deg);
+        opacity: .13
+    }
+    50% {
+        transform: translate(0px, 4px) rotate(2.5deg);
+        opacity: .04
+    }
+    60% {
+        transform: translate(3px, -3px) rotate(2.5deg);
+        opacity: .99
+    }
+    70% {
+        transform: translate(-4px, 5px) rotate(1.5deg);
+        opacity: .76
+    }
+    80% {
+        transform: translate(5px, 1px) rotate(0.5deg);
+        opacity: .31
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(2.5deg);
+        opacity: .98
+    }
+    0%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-opacity:hover, .shake-trigger:hover .shake-opacity, .shake-opacity.shake-freeze, .shake-opacity.shake-constant {
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-name: shake-opacity;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-crazy {
+    10% {
+        transform: translate(14px, 2px) rotate(3deg);
+        opacity: .22
+    }
+    20% {
+        transform: translate(-13px, -5px) rotate(2deg);
+        opacity: .07
+    }
+    30% {
+        transform: translate(10px, 7px) rotate(9deg);
+        opacity: .64
+    }
+    40% {
+        transform: translate(20px, -1px) rotate(-9deg);
+        opacity: .66
+    }
+    50% {
+        transform: translate(-11px, 18px) rotate(1deg);
+        opacity: .57
+    }
+    60% {
+        transform: translate(-16px, 15px) rotate(7deg);
+        opacity: .81
+    }
+    70% {
+        transform: translate(-6px, 5px) rotate(8deg);
+        opacity: .88
+    }
+    80% {
+        transform: translate(12px, 3px) rotate(1deg);
+        opacity: .76
+    }
+    90% {
+        transform: translate(18px, 7px) rotate(-9deg);
+        opacity: .92
+    }
+    0%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-crazy:hover, .shake-trigger:hover .shake-crazy, .shake-crazy.shake-freeze, .shake-crazy.shake-constant {
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-name: shake-crazy;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes shake-chunk {
+    2% {
+        transform: translate(11px, 12px) rotate(-8deg)
+    }
+    4% {
+        transform: translate(9px, 8px) rotate(10deg)
+    }
+    6% {
+        transform: translate(13px, 13px) rotate(11deg)
+    }
+    8% {
+        transform: translate(14px, -1px) rotate(-14deg)
+    }
+    10% {
+        transform: translate(6px, 9px) rotate(-10deg)
+    }
+    12% {
+        transform: translate(-7px, -5px) rotate(7deg)
+    }
+    14% {
+        transform: translate(5px, 7px) rotate(2deg)
+    }
+    16% {
+        transform: translate(7px, 2px) rotate(-12deg)
+    }
+    18% {
+        transform: translate(14px, 6px) rotate(-5deg)
+    }
+    20% {
+        transform: translate(-5px, -8px) rotate(7deg)
+    }
+    22% {
+        transform: translate(14px, -13px) rotate(-3deg)
+    }
+    24% {
+        transform: translate(15px, -3px) rotate(-3deg)
+    }
+    26% {
+        transform: translate(8px, -11px) rotate(5deg)
+    }
+    28% {
+        transform: translate(1px, -11px) rotate(-3deg)
+    }
+    30% {
+        transform: translate(15px, 11px) rotate(0deg)
+    }
+    32% {
+        transform: translate(4px, 10px) rotate(1deg)
+    }
+    34% {
+        transform: translate(-11px, 11px) rotate(-6deg)
+    }
+    36% {
+        transform: translate(2px, -12px) rotate(4deg)
+    }
+    38% {
+        transform: translate(-2px, -6px) rotate(5deg)
+    }
+    0%, 40%, 100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.shake-chunk:hover, .shake-trigger:hover .shake-chunk, .shake-chunk.shake-freeze, .shake-chunk.shake-constant {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: shake-chunk;
+    animation-timing-function: ease-in-out
+}
+
+.tbox {
+    position: absolute;
+    display: none;
+    padding: 14px 17px;
+    z-index: 900
+}
+
+.tinner {
+    padding: 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fff url(/wp-content/themes/Loostrive/images/preload.gif) no-repeat 50% 50%;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333
+}
+
+.tmask {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 800
+}
+
+.tclose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(/wp-content/themes/Loostrive/images/close.png) no-repeat
+}
+
+.tclose:hover {
+    background-position: 0 -30px
+}
+
+.overbt {
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through
+}
+
+.thumbnail img {
+    width: 227px;
+    height: 303px
+}
+
+#post_container li {
+    width: 230px
+}
+
+.mainleft {
+    width: 980px
+}
+
+#post_container .fixed-hight h2 a {
+    height: 50px;
+    white-space: normal
+}
+
+@media screen and (min-width: 1px) {
+    .thumbnail img {
+        width: 227px;
+        height: 303px
+    }
+
+    #post_container li {
+        width: 230px
+    }
+
+    .mainleft {
+        width: 980px
+    }
+
+    #post_container .fixed-hight h2 a {
+        height: 50px;
+        white-space: normal
+    }
+}
+
+@media screen and (max-width: 6000px) {
+    .container {
+        max-width: 1200px !important
+    }
+
+    .thumbnail img {
+        width: 200px;
+        height: 270px
+    }
+
+    #post_container li {
+        width: 202px
+    }
+
+    .mainleft {
+        width: 868px
+    }
+
+    #post_container .fixed-hight h2 a {
+        height: 50px;
+        white-space: normal
+    }
+}
+
+#tinybox {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    background: #fff url(//www.gaoqingkong.com/image/preload.gif) no-repeat 50% 50%;
+    border: 10px solid #e3e3e3;
+    z-index: 2000
+}
+
+#tinymask {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 1500
+}
+
+#tinycontent {
+    background: #fff;
+    font-size: 1.1em
+}
+
+#lv-container {
+    padding: 25px;
+    background: #FFF
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w div.post-wrap-main {
+    background: #415464 !important
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-issue-w .issue-btn-w a button.btn-fw {
+    background-image: url(//ww1.sinaimg.cn/large/5ff1c93agy1fhcvhj4831j202u00ujrk.jpg) !important
+}
+
+#feedAv {
+    margin-top: -250px !important;
+    transform: scale(0)
+}
+
+.tbox {
+    position: absolute;
+    display: none;
+    padding: 14px 17px;
+    z-index: 900
+}
+
+.tinner {
+    padding: 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fff url(//www.gaoqingkong.com/wp-content/themes/Loostrive/other/tinybox2/images/preload.gif) no-repeat 50% 50%;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333
+}
+
+.tmask {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 800
+}
+
+.tclose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(//www.gaoqingkong.com/wp-content/themes/Loostrive/other/tinybox2/images/close.png) no-repeat
+}
+
+.tclose:hover {
+    background-position: 0 -30px
+}
+
+.tcontent {
+    background: #dce0ec
+}
+
+#error {
+    background: #ff6969;
+    color: #fff;
+    text-shadow: 1px 1px #cf5454;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 0
+}
+
+#error .tcontent {
+    padding: 10px 14px 11px;
+    border: 1px solid #ffb8b8;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+#success {
+    background: #2ea125;
+    color: #fff;
+    text-shadow: 1px 1px #1b6116;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+#bluemask {
+    background: #000
+}
+
+#frameless {
+    padding: 0
+}
+
+#frameless .tclose {
+    left: 6px
+}
+
+#SOHUCS #SOHU_MAIN {
+    width: 98% !important
+}
